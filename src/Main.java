@@ -13,6 +13,16 @@ public class Main {
 		
 		cc.imprimirExtrato();
 		poupanca.imprimirExtrato();
+
+		Cliente felipe = new Cliente();
+		felipe.setNome("Felipe");
+
+		Conta cc2 = new ContaCorrente(felipe);
+		cc2.imprimirExtrato();
+		cc2.depositar(1000.00);
+		cc2.imprimirExtrato();
+		cc2.pagar(150,"Escola");
+
 	}
 
 }
